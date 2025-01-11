@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Simples</title>
+</head>
+<body>
+    <h1>Formulário com Dois Campos Varchar</h1>
+    
+    <form action="/submit" method="POST" id="EncurtarURL">
+        <label for="CampoURL">Digite a url:</label>
+        <input type="text" id="CampoURL" name="CampoURL" required>
+        <br><br>
+        
+        <label for="URLEncurtada">URL encurtada:</label>
+        <input type="text" id="URLEncurtada" name="URLEncurtada">
+        <br><br>
+        
+        <button type="submit">Encurtar</button>
+    </form>
+
+    <!-- Importa o script JavaScript -->
+    <script src="index.js"></script>
+
+</body>
+</html>
