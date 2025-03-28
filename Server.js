@@ -19,7 +19,7 @@ app.get('/:id?', async (req, res) => {
 
   try {
       // Chamada para a API que busca a URL original
-      const response = await fetch(`http://10.10.0.18:3000/shorten-url/getOriginalUrl/${id}`);
+      const response = await fetch(`http://localhost:3000/shorten-url/getOriginalUrl/${id}`);
 
       if (response.ok) {
           const data = await response.json();
@@ -42,6 +42,6 @@ app.use(express.json());
 app.use('/shorten-url', shortenUrlRoute);
 
 
-app.listen(port, '10.10.0.18',() => {
-    console.log(`Servidor rodando em http://10.10.0.18:${port}`);
+app.listen(port, 'localhost',() => {
+    console.log(`Servidor rodando em http://localhost:${port}`);
   });

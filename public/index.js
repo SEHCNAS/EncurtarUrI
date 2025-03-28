@@ -7,7 +7,7 @@ document.getElementById('EncurtarURL').addEventListener('submit', async function
     console.log('Chamada da api');
 
     try {
-        const response = await fetch('http://10.10.0.18:3000/shorten-url', {
+        const response = await fetch('http://localhost:3000/shorten-url', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

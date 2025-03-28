@@ -34,7 +34,7 @@ async function EncurtarURL(url){
 
     await InserirRegistro(url, Id);
 
-    UrlEncurtada = /*window.location.origin*/'http://10.10.0.18:3000' + `/${Id}`;
+    UrlEncurtada = /*window.location.origin*/'http://localhost:3000' + `/${Id}`;
 
     return UrlEncurtada;
 }

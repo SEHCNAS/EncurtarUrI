@@ -1,0 +1,45 @@
+# Dependências do Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Logs e relatórios de erro
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Diretórios de build e cache
+dist/
+build/
+.cache/
+.nyc_output/
+coverage/
+tmp/
+out/
+.next/
+.vercel/
+.vscode/
+
+# Arquivos do sistema e editores
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
+
+# Ambiente e credenciais
+.env
+.env.local
+.env.*.local
+
+# Arquivos de deploy
+public/
